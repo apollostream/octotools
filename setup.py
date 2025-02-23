@@ -9,7 +9,7 @@ setup(
     author='',
     author_email='',
     url='https://octotools.github.io',
-    packages=find_packages(),
+    packages=find_packages(include=['octotools', 'octotools.*']),
     install_requires=open('requirements.txt').read().splitlines(),
     classifiers=[
         'Programming Language :: Python :: 3',
